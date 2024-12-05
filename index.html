@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-900 text-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-teal-800 to-purple-700 text-white py-8">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Name Section with slight shift to the right -->
+      <div class="flex flex-col justify-center text-center w-full ml-20">
+        <h1 class="text-5xl font-semibold">Kartik Dwivedi</h1>
+        <p class="text-xl mt-4">Aspiring Data Analyst | Problem Solver</p>
+      </div>
+      <!-- Circular Image Section with Larger Photo -->
+      <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white">
+        <img src="WhatsApp Image 2024-09-14 at 09.43.38_1d5c8d3b.jpg"  class="object-cover w-full h-full">
+      </div>
+    </div>
+    <nav class="mt-7 text-center">
+      <ul class="flex justify-center space-x-20 text-lg">
+        <li><a href="#about" class="hover:text-teal-300 transition duration-300">About</a></li>
+        <li><a href="#skills" class="hover:text-teal-300 transition duration-300">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-300 transition duration-300">Projects</a></li>
+        <li><a href="#resume" class="hover:text-teal-300 transition duration-300">Resume</a></li>
+        <li><a href="#contact" class="hover:text-teal-300 transition duration-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-cover bg-center text-white" style="background-image: url('images/background.jpg');">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        I am passionate about data analysis and solving complex problems. With a strong background in SQL, Python, and Excel, I enjoy transforming data into actionable insights.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div class="bg-teal-600 text-white py-4 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+          Python
+        </div>
+        <div class="bg-teal-600 text-white py-4 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+          SQL
+        </div>
+        <div class="bg-teal-600 text-white py-4 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+          Tableau
+        </div>
+        <div class="bg-teal-600 text-white py-4 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+          Power BI
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-teal-300">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-semibold">Project 1</h3>
+          <p class="mt-2">A detailed description of the project, including tools and technologies used.</p>
+          <a href="https://github.com" class="text-teal-400 hover:text-teal-600 mt-4 inline-block">View on GitHub</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-semibold">Project 2</h3>
+          <p class="mt-2">Another project showcasing your expertise with data analysis techniques.</p>
+          <a href="https://github.com" class="text-teal-400 hover:text-teal-600 mt-4 inline-block">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4 text-teal-300">Resume</h2>
+      <p class="text-lg mb-6">Download my full resume to learn more about my career and achievements.</p>
+      <a href="assets/resume.pdf" class="bg-teal-600 text-white py-3 px-6 rounded-lg hover:bg-teal-800 transition duration-300 inline-block">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-cover bg-center text-white" style="background-image: url('images/background.jpg');">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+      <form id="contact-form" class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-md">
+        <input type="text" id="name" placeholder="Your Name" required class="w-full p-3 mb-4 border border-gray-600 bg-gray-700 text-white rounded-lg">
+        <input type="email" id="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-gray-600 bg-gray-700 text-white rounded-lg">
+        <textarea id="message" placeholder="Your Message" required class="w-full p-3 mb-4 border border-gray-600 bg-gray-700 text-white rounded-lg"></textarea>
+        <button type="submit" class="bg-teal-600 text-white py-3 px-6 rounded-lg hover:bg-teal-800 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "hK9uRICTZ57FX2emF",
+      });
+   })();
+</script>
+<script>
+  // Initialize EmailJS with your user ID (replace 'YOUR_USER_ID' with your actual user ID from EmailJS)
+  
+
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Capture the form data
+    var formData = {
+      from_name: document.getElementById("name").value,
+      email_id: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    // Send the form data using EmailJS
+    emailjs.send("service_pc4trv8", "template_szr01oa", formData)
+      .then(function(response) {
+        // Show success message
+        alert("Your message has been sent successfully!");
+        // Optionally reset the form
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        // Show error message
+        alert("Something went wrong, please try again later.");
+      });
+  });
+</script>
+
+
+  <footer class="py-8 bg-teal-800 text-white text-center">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
